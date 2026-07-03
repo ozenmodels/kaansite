@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünlerimiz - glpgazyangın Tüp ve Gaz Çeşitleri</title>
+    <meta name="description" content="Sanayi gaz çeşitleri ve yangın söndürme cihazları. 9 farklı sınai gaz tüpü ve özel kullanım alanlarına uygun varyasyonları inceleyin.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigasyon -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo" id="headerLogo">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2c1.7 0 3 1.3 3 3v7c0 1.7-1.3 3-3 3s-3-1.3-3-3V5c0-1.7 1.3-3 3-3z"/>
+                        <path d="M19 10v1a7 7 0 0 1-14 0v-1"/>
+                    </svg>
+                </div>
+                <div class="logo-text">GLPGAZ<span>YANGIN</span></div>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link" id="navHome">Anasayfa</a>
+                <a href="urunlerimiz.html" class="nav-link active" id="navProducts">Ürünlerimiz</a>
+                <a href="iletisim.html" class="nav-link" id="navContact">İletişim</a>
+            </nav>
+
+            <a href="iletisim.html" class="nav-btn" id="navOrderBtn">Hızlı Sipariş</a>
+
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ürün Banner Başlık -->
+    <section class="section" style="background-color: var(--primary-dark); color: white; padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem;">Ürünlerimiz ve Çözümlerimiz</h1>
+            <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto;">Sanayi gaz çeşitleri ve yüksek güvenlikli yangın söndürme ekipmanları.</p>
+        </div>
+    </section>
+
+    <!-- Arama ve Filtreleme Bölümü -->
+    <section class="search-filter-section">
+        <div class="container search-filter-bar">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" class="search-input" placeholder="Tüp, gaz veya söndürücü adı arayın...">
+                <div class="search-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="filter-categories">
+                <button class="filter-btn active" data-filter="all">Tüm Ürünler</button>
+                <button class="filter-btn" data-filter="sanayi-gazlari">Sanayi Gaz Çeşitleri</button>
+                <button class="filter-btn" data-filter="yangin-sondurme">Yangın Söndürme Cihazları</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ürünler Listesi Grid -->
+    <section class="section" style="background-color: var(--bg-light); padding-top: 1rem;">
+        <div class="container">
+            <div class="products-grid">
+                
+                <!-- 1. OKSİJEN (O2) -->
+                <div class="product-card" data-category="sanayi-gazlari" id="prodOksijen">
+                    <div class="product-img-area">
+                        <img src="assets/gaz_oksijen.png" alt="Oksijen Tüpü (O2)" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">1. Oksijen (O₂)</h2>
+                            <span class="product-badge">Sanayi Gazı</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Renksiz, kokusuz ve tatsız gazdır. Yanmayı destekler. Havadan biraz daha ağırdır. Sıvılaştırıldığında açık mavi renktedir.</p>
+                            <p><strong>Kullanım Alanları:</strong> Kaynak ve kesme işlemleri, Tıbbi uygulamalar, Metal üretimi, Atık su arıtma, Cam ve kağıt üretimi.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varOksijenKaynak">Kaynak & Kesme Tipi</button>
+                                <button class="var-tab" data-target="varOksijenMedikal">Medikal Tıbbi Tip</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varOksijenKaynak">
+                                    <span class="var-tag">[Kaynak & Kesme]</span> Sanayide metallerin oksi-asetilen alevi yardımıyla kesilmesi, tavlanması ve eritilerek kaynak yapılması işlemlerinde kullanılır.
+                                </div>
+                                <div class="var-desc" id="varOksijenMedikal">
+                                    <span class="var-tag">[Tıbbi Uygulamalar]</span> Hastanelerde, ambulanslarda ve evlerde solunum yetmezliği çeken hastaların oksijen terapisi ihtiyaçlarında yüksek saflıkta solunum oksijeni.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_gaz_oksijen.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 2. KARBONDİOKSİT (CO2) -->
+                <div class="product-card" data-category="sanayi-gazlari" id="prodCO2">
+                    <div class="product-img-area">
+                        <img src="assets/gaz_co2.png" alt="Karbondioksit Tüpü (CO2)" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">2. Karbondioksit (CO₂)</h2>
+                            <span class="product-badge">Sanayi Gazı</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Renksiz, kokusuz gazdır. Yanıcı değildir. Havadan daha ağırdır. Suda çözünerek asidik özellik gösterir.</p>
+                            <p><strong>Kullanım Alanları:</strong> MIG kaynağı, Yangın söndürme sistemleri, Gıda ve içecek endüstrisi, Soğutma (kuru buz), Sera bitkiciliği.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varCO2Sanayi">Endüstriyel Kaynak & Söndürme</button>
+                                <button class="var-tab" data-target="varCO2Gida">Gıda & İçecek Tipi</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varCO2Sanayi">
+                                    <span class="var-tag">[MIG Kaynağı & Yangın]</span> Gazaltı (MIG/MAG) kaynaklarında koruyucu atmosfer gazı ve büyük ölçekli yangın söndürme sistemlerinde boğucu ajan.
+                                </div>
+                                <div class="var-desc" id="varCO2Gida">
+                                    <span class="var-tag">[Gıda & Soğutma]</span> Gazlı meşrubat ve maden sularının gazlandırılması (post-mix dolum), sera bitkiciliğinde karbondioksit gübrelemesi ve kuru buz üretimi.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_gaz_co2.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 3. ARGON (Ar) -->
+                <div class="product-card" data-category="sanayi-gazlari" id="prodArgon">
+                    <div class="product-img-area">
+                        <img src="assets/gaz_argon.png" alt="Argon Tüpü (Ar)" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">3. Argon (Ar)</h2>
+                            <span class="product-badge">Sanayi Gazı</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Renksiz, kokusuz, inert bir gazdır. Hava ile reaksiyona girmez. Kaynakta koruyucu gaz olarak kullanılır. Havadan biraz daha ağırdır.</p>
+                            <p><strong>Kullanım Alanları:</strong> TIG kaynağı, Metal üretimi, Ampul ve floresan tüp üretimi, Yarı iletken ve elektronik üretimi.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varArgonTIG">TIG Kaynak Koruyucu Gaz</button>
+                                <button class="var-tab" data-target="varArgonAmpul">Ampul & Yarı İletken Tipi</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varArgonTIG">
+                                    <span class="var-tag">[TIG Kaynağı]</span> Paslanmaz çelik, titanyum ve alüminyum TIG kaynaklarında kaynak havuzunu havanın bozucu etkisinden koruyan yüksek saflıkta argon.
+                                </div>
+                                <div class="var-desc" id="varArgonAmpul">
+                                    <span class="var-tag">[Endüstriyel Ampul]</span> Akkor ampul ve floresan tüp içlerinin doldurulması, yarı iletken elektronik kart ve kristal silikon üretim prosesleri.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_gaz_argon.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 4. AZOT (N2) -->
+                <div class="product-card" data-category="sanayi-gazlari" id="prodAzot">
+                    <div class="product-img-area">
+                        <img src="assets/gaz_azot.png" alt="Azot Tüpü (N2)" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">4. Azot (N₂)</h2>
+                            <span class="product-badge">Sanayi Gazı</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Renksiz, kokusuz ve tatsız gazdır. Yanıcı değildir. Havadaki en yaygın gazdır (%78). Kimyasal olarak inerttir.</p>
+                            <p><strong>Kullanım Alanları:</strong> Gıda paketleme, Elektronik üretimi, Kimyasal üretim, Lazer kesim, Lastik ve plastik üretimi.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varAzotPaket">Gıda Paketleme Tipi</button>
+                                <button class="var-tab" data-target="varAzotLazer">Lazer Kesim & Test Tipi</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varAzotPaket">
+                                    <span class="var-tag">[Gıda & Lastik]</span> Gıda ambalajlarında (cips, kuruyemiş vb.) oksijeni uzaklaştırarak bozulmayı önleyen azot gazı dolumu ve uçak/araç lastiklerinin şişirilmesi.
+                                </div>
+                                <div class="var-desc" id="varAzotLazer">
+                                    <span class="var-tag">[Lazer Kesim]</span> Yüksek güçlü fiber lazer kesim makinelerinde çapak ve kararma olmaksızın pürüzsüz metal kesimi sağlayan yüksek basınçlı azot.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_gaz_azot.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 5. ASETİLEN (C2H2) -->
+                <div class="product-card" data-category="sanayi-gazlari" id="prodAsetilen">
+                    <div class="product-img-area">
+                        <img src="assets/gaz_asetilen.png" alt="Asetilen Tüpü (C2H2)" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">5. Asetilen (C₂H₂)</h2>
+                            <span class="product-badge">Sanayi Gazı</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Renksiz, hafif kokulu gazdır. Çok yanıcıdır. Oksijenle yüksek ısıda yanar. Basınç altında çözünmüş şekilde saklanır.</p>
+                            <p><strong>Kullanım Alanları:</strong> Oksi-asetilen kaynağı, Metal kesme, Kimyasal sentez, Plastik ve lastik üretimi.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varAsetilenKaynak">Oksi-Asetilen Kaynak & Kesim</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varAsetilenKaynak">
+                                    <span class="var-tag">[Oksi-Asetilen Alevi]</span> Oksijen gazıyla birleşerek yandığında 3100°C'ye ulaşan aleviyle metallerin yüksek ısılı kaynağı, eritilmesi, bükülmesi ve tavlanması.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_gaz_asetilen.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 6. HELYUM (He) -->
+                <div class="product-card" data-category="sanayi-gazlari" id="prodHelyum">
+                    <div class="product-img-area">
+                        <img src="assets/gaz_helyum.png" alt="Helyum Tüpü (He)" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">6. Helyum (He)</h2>
+                            <span class="product-badge">Sanayi Gazı</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Renksiz, kokusuz, inert gazdır. En hafif gazdır. Çok düşük sıcaklıklarda sıvılaşır. Yanıcı değildir.</p>
+                            <p><strong>Kullanım Alanları:</strong> Balon ve zeplin şişirme, Soğutma (MR cihazları), Kaynak (helyum ark kaynağı), Kaçak testi, Yüksek teknoloji uygulamaları.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varHelyumBalon">Uçan Balon Gazı</button>
+                                <button class="var-tab" data-target="varHelyumTeknik">MR Soğutma & Analiz</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varHelyumBalon">
+                                    <span class="var-tag">[Balon Şişirme]</span> Yoğunluğu çok hafif olduğundan dolayı parti, organizasyon ve uçan balon/zeplinlerin güvenle şişirilmesi.
+                                </div>
+                                <div class="var-desc" id="varHelyumTeknik">
+                                    <span class="var-tag">[MR & Kaçak Testi]</span> MR (Manyetik Rezonans) cihazı mıknatıslarını sıvı helyumla soğutma, hassas boru hatlarında gaz kromatografi ve kaçak tespiti.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_gaz_helyum.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 7. KURU HAVA -->
+                <div class="product-card" data-category="sanayi-gazlari" id="prodKuruHava">
+                    <div class="product-img-area">
+                        <img src="assets/gaz_kuru_hava.png" alt="Kuru Hava Tüpü" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">7. Kuru Hava</h2>
+                            <span class="product-badge">Sanayi Gazı</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Nemden arındırılmış basınçlı havadır. Genellikle %78 Azot ve %21 Oksijen içerir. Yanıcı değildir. Temiz, kuru ve yağsızdır.</p>
+                            <p><strong>Kullanım Alanları:</strong> Pnömatik sistemler, Boyama ve kaplama, Temizleme ve kurutma, Gıda ve ilaç endüstrisi, Otomasyon sistemleri.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varKuruHavaBoya">Pnömatik & Endüstriyel Boyama</button>
+                                <button class="var-tab" data-target="varKuruHavaOtomasyon">Gıda & İlaç Pnömatik Tipi</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varKuruHavaBoya">
+                                    <span class="var-tag">[Pnömatik Boya]</span> Yaş boya tabancalarında pürüzsüz kaplama yapmak, nem hassasiyeti yüksek endüstriyel filtre temizleme ve kurutma işleri.
+                                </div>
+                                <div class="var-desc" id="varKuruHavaOtomasyon">
+                                    <span class="var-tag">[Gıda & İlaç]</span> Gıda paketleme makinelerinde valf/piston tahriki ve nemsiz yağsız kuru hava gerektiren tüm ilaç üretim prosesleri.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_gaz_kuru_hava.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 8. KARIŞIM GAZLAR -->
+                <div class="product-card" data-category="sanayi-gazlari" id="prodKarisimGaz">
+                    <div class="product-img-area">
+                        <img src="assets/gaz_karisim.png" alt="Karışım Gazı Tüpü" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">8. Karışım Gazlar</h2>
+                            <span class="product-badge">Sanayi Gazı</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> İki veya daha fazla gazın belirli oranlarda karıştırılmasıyla elde edilir. İhtiyaca göre özel olarak hazırlanır. Kaynak, kesim ve koruma amaçlı kullanılır.</p>
+                            <p><strong>Kullanım Alanları:</strong> MIG/MAG kaynak (Ar+CO<sub>2</sub>), TIG kaynak (Ar+He), Lazer kesim, Laboratuvar ve analiz uygulamaları.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varKarisim80">Ar+CO<sub>2</sub> (%80/%20)</button>
+                                <button class="var-tab" data-target="varKarisim92">Ar+CO<sub>2</sub> (%92/%8)</button>
+                                <button class="var-tab" data-target="varKarisim50">Ar+He (%50/%50)</button>
+                                <button class="var-tab" data-target="varKarisimIsil">N<sub>2</sub> + H<sub>2</sub> Karışımı</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varKarisim80">
+                                    <span class="var-tag">[MIG/MAG Kaynak]</span> Sıçramayı en aza indiren, kararlı kaynak arkı sağlayan standart koruyucu gazaltı karışımı.
+                                </div>
+                                <div class="var-desc" id="varKarisim92">
+                                    <span class="var-tag">[İnce Sac Kaynağı]</span> İnce sac levhaların MIG/MAG gazaltı kaynaklarında yüksek verimli, sıçramasız, pürüzsüz kaynak dikişi.
+                                </div>
+                                <div class="var-desc" id="varKarisim50">
+                                    <span class="var-tag">[Alüminyum TIG]</span> Alüminyum ve alaşımlı metallerin TIG kaynağında yüksek ısı girdisi sağlayan koruyucu gaz karışımı.
+                                </div>
+                                <div class="var-desc" id="varKarisimIsil">
+                                    <span class="var-tag">[Isıl İşlem]</span> Metal ısıl işlem fırınlarında çeliğin yüzeyini koruyan reaksiyonsuz (inert) fırın atmosferi.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_gaz_karisim.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 9. LPG (SIVILAŞTIRILMIŞ PETROL GAZI) -->
+                <div class="product-card" data-category="sanayi-gazlari" id="prodLPG">
+                    <div class="product-img-area">
+                        <img src="assets/gaz_lpg.png" alt="LPG Tüpü" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">9. LPG (Sıvılaştırılmış Petrol Gazı)</h2>
+                            <span class="product-badge">Sanayi Gazı</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Propan (C<sub>3</sub>H<sub>8</sub>) ve Bütan (C<sub>4</sub>H<sub>10</sub>) karışımıdır. Basınç altında sıvılaştırılmıştır. Yanıcı ve parlayıcıdır. Havadan ağırdır.</p>
+                            <p><strong>Kullanım Alanları:</strong> Isınma ve pişirme, Sanayi fırınları, Kesme ve lehimleme, Jeneratör yakıtı, Taşıt yakıtı (otogaz).</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varLPGEv">Mutfak & Piknik Grubu</button>
+                                <button class="var-tab" data-target="varLPGSanayi">Ticari & Sanayi & Forklift</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varLPGEv">
+                                    <span class="var-tag">[Ev & Piknik]</span> Ev ocağı, şofben ve piknik ocakları için kullanılan 2 kg piknik ve 12 kg ev tüpü grubu.
+                                </div>
+                                <div class="var-desc" id="varLPGSanayi">
+                                    <span class="var-tag">[Ticari & Sanayi]</span> Restoran fırınları, kaynak/lehimleme işleri için 24 kg / 45 kg sanayi tüpleri ve jeneratör/forklift yakıtı.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_gaz_lpg.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 1. KURU KİMYEVİ TOZLU SÖNDÜRÜCÜ (ABC) -->
+                <div class="product-card" data-category="yangin-sondurme" id="prodKKT_ABC">
+                    <div class="product-img-area">
+                        <img src="assets/sondurucu_abc.png" alt="KKT ABC Yangın Söndürücü" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">1. Kuru Kimyevi Tozlu Söndürücü (ABC)</h2>
+                            <span class="product-badge">Yangın Söndürme</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Çok amaçlı kullanıma uygundur. A, B ve C sınıfı yangınlarda etkilidir. Tozlu yapısı nedeniyle kalıntı bırakır. Elektrik yangınlarında güvenle kullanılabilir.</p>
+                            <p><strong>Kullanım Alanları:</strong> Evler, iş yerleri, Araçlar, Elektrik panoları, Fabrika ve atölyeler, Okul, hastane, oteller.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varKKTABC6">ABC Tozlu (6 kg)</button>
+                                <button class="var-tab" data-target="varKKTABC9">ABC Tozlu (9 kg)</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varKKTABC6">
+                                    <span class="var-tag">[6 kg Cihaz]</span> Evler, ofisler ve standart yangın yönetmeliğine tabi bina koridorları için en yaygın söndürücü tipi.
+                                </div>
+                                <div class="var-desc" id="varKKTABC9">
+                                    <span class="var-tag">[9 kg Cihaz]</span> Büyük depolama alanları, atölyeler ve endüstriyel tesisler için yüksek kapasiteli taşınabilir söndürücü.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_sondurucu_abc.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 2. KARBONDİOKSİT (CO2) SÖNDÜRÜCÜ -->
+                <div class="product-card" data-category="yangin-sondurme" id="prodCO2_Sondurucu">
+                    <div class="product-img-area">
+                        <img src="assets/sondurucu_co2.png" alt="CO2 Yangın Söndürücü" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">2. Karbondioksit (CO₂) Söndürücü</h2>
+                            <span class="product-badge">Yangın Söndürme</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Elektrik iletken değildir. Sıvı ve elektrik yangınlarında etkilidir. İz bırakmaz, kalıntı bırakmaz. Kapalı alanlarda boğucu etki yapabilir.</p>
+                            <p><strong>Kullanım Alanları:</strong> Elektrik panoları, Bilgisayar ve sunucular, Laboratuvarlar, Arşiv, müze, kütüphane, Yanıcı sıvı depoları.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varCO2S5">CO2 Söndürücü (5 kg)</button>
+                                <button class="var-tab" data-target="varCO2S10">CO2 Söndürücü (10 kg)</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varCO2S5">
+                                    <span class="var-tag">[5 kg Cihaz]</span> Sunucu odaları, elektrik panoları ve hassas laboratuvar ekipmanları için tortu bırakmayan ideal koruma.
+                                </div>
+                                <div class="var-desc" id="varCO2S10">
+                                    <span class="var-tag">[10 kg Cihaz]</span> Yanıcı sıvı depolama alanları ve endüstriyel elektrik odaları için tekerlekli/yüksek kapasiteli cihaz.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_sondurucu_co2.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 3. KÖPÜKLÜ SÖNDÜRÜCÜ (AFFF) -->
+                <div class="product-card" data-category="yangin-sondurme" id="prodKopuklu_AFFF">
+                    <div class="product-img-area">
+                        <img src="assets/sondurucu_afff.png" alt="Köpüklü AFFF Söndürücü" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">3. Köpüklü Söndürücü (AFFF)</h2>
+                            <span class="product-badge">Yangın Söndürme</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Yanıcı sıvı yangınlarında etkilidir. Köpük tabakası oksijen temasını keser. Su ile karışabilen sıvılarda iyidir. Elektrik yangınlarında kullanılmaz.</p>
+                            <p><strong>Kullanım Alanları:</strong> Akaryakıt istasyonları, Boya ve solvent depoları, Kimyasal sıvı depoları, Liman ve gemiler, Uçak hangarları.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varAFFF6">Köpüklü AFFF (6 lt)</button>
+                                <button class="var-tab" data-target="varAFFF9">Köpüklü AFFF (9 lt)</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varAFFF6">
+                                    <span class="var-tag">[6 lt Cihaz]</span> Akaryakıt ve solvent içeren yangınlarda yanan sıvının üzerini film tabakası gibi kaplayan standart köpüklü söndürücü.
+                                </div>
+                                <div class="var-desc" id="varAFFF9">
+                                    <span class="var-tag">[9 lt Cihaz]</span> Uçak hangarları ve marin/gemi makine daireleri gibi sıvı yakıt yangın riski yüksek alanlar için yüksek debili cihaz.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_sondurucu_afff.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 4. SULU SÖNDÜRÜCÜ -->
+                <div class="product-card" data-category="yangin-sondurme" id="prodSulu">
+                    <div class="product-img-area">
+                        <img src="assets/sondurucu_sulu.png" alt="Sulu Yangın Söndürücü" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">4. Sulu Söndürücü</h2>
+                            <span class="product-badge">Yangın Söndürme</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Katı madde yangınlarında etkilidir. Soğutma etkisi ile yangını söndürür. Elektrik yangınlarında kullanılmaz. Yanıcı sıvı yangınlarında etkisizdir.</p>
+                            <p><strong>Kullanım Alanları:</strong> Ahşap, kağıt, tekstil yangınları, Evler, okullar, Ofisler, Depolar, Orman ve açık alanlar.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varSu6">Sulu Söndürücü (6 lt)</button>
+                                <button class="var-tab" data-target="varSu9">Sulu Söndürücü (9 lt)</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varSu6">
+                                    <span class="var-tag">[6 lt Cihaz]</span> Kağıt, ahşap, mobilya deposu ve arşiv gibi sadece katı madde barındıran alanlar için soğutucu etkili sulu söndürme.
+                                </div>
+                                <div class="var-desc" id="varSu9">
+                                    <span class="var-tag">[9 lt Cihaz]</span> Kereste depoları, tarım alanları ve orman yakınındaki tesisler için yüksek kapasiteli sulu silindir.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_sondurucu_sulu.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 5. KURU KİMYEVİ TOZLU SÖNDÜRÜCÜ (BC) -->
+                <div class="product-card" data-category="yangin-sondurme" id="prodKKT_BC">
+                    <div class="product-img-area">
+                        <img src="assets/sondurucu_bc.png" alt="KKT BC Yangın Söndürücü" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">5. Kuru Kimyevi Tozlu Söndürücü (BC)</h2>
+                            <span class="product-badge">Yangın Söndürme</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> B ve C sınıfı yangınlarda etkilidir. Yanıcı sıvı ve gaz yangınlarına uygundur. Elektrik yangınlarında güvenle kullanılır. Katı madde yangınlarında etkisizdir.</p>
+                            <p><strong>Kullanım Alanları:</strong> Akaryakıt istasyonları, Kimyasal tesisler, Boya ve solvent alanları, Elektrik panoları, Laboratuvarlar.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varKKTBC6">BC Tozlu (6 kg)</button>
+                                <button class="var-tab" data-target="varKKTBC12">BC Tozlu (12 kg)</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varKKTBC6">
+                                    <span class="var-tag">[6 kg Cihaz]</span> Yanıcı sıvıların ve gazların bulunduğu kimya laboratuvarları ve dolum istasyonlarında kullanılan BC sınıfı cihaz.
+                                </div>
+                                <div class="var-desc" id="varKKTBC12">
+                                    <span class="var-tag">[12 kg Cihaz]</span> Rafineriler ve petrokimya tesisleri için yüksek hacimli BC kuru kimyevi tozlu tekerlekli söndürücü.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_sondurucu_bc.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 6. ISLAK KİMYEVİ SÖNDÜRÜCÜ (F) -->
+                <div class="product-card" data-category="yangin-sondurme" id="prodIslak">
+                    <div class="product-img-area">
+                        <img src="assets/sondurucu_islak.png" alt="Islak Kimyevi Söndürücü" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">6. Islak Kimyevi Söndürücü (F)</h2>
+                            <span class="product-badge">Yangın Söndürme</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Mutfak (yağ) yangınlarında etkilidir. Yağ yüzeyinde sabunlaşarak örtü oluşturur. Yüksek sıcaklıktaki yağları hızla soğutur. Elektrik yangınlarında kullanılmaz.</p>
+                            <p><strong>Kullanım Alanları:</strong> Restoran, mutfaklar, Lokantalar, Oteller, Yemek üretim alanları, Catering şirketleri.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varIslak6">Islak Kimyevi (6 lt)</button>
+                                <button class="var-tab" data-target="varIslak9">Islak Kimyevi (9 lt)</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varIslak6">
+                                    <span class="var-tag">[6 lt Cihaz]</span> Endüstriyel mutfaklarda, fritözlerde ve yemek üretim tesislerindeki kızgın yağ yangınları için sabunlaştırıcı söndürme.
+                                </div>
+                                <div class="var-desc" id="varIslak9">
+                                    <span class="var-tag">[9 lt Cihaz]</span> Oteller ve büyük catering fabrikalarındaki yüksek kapasiteli pişirme hatları için uygun kızgın yağ söndürme silindiri.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_sondurucu_islak.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 7. HALOKARBON (FM-200 / NOVEC 1230) -->
+                <div class="product-card" data-category="yangin-sondurme" id="prodHalokarbon">
+                    <div class="product-img-area">
+                        <img src="assets/sondurucu_halo.png" alt="Halokarbon Söndürücü" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">7. Halokarbon (FM-200 / NOVEC 1230)</h2>
+                            <span class="product-badge">Yangın Söndürme</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Temiz gazdır, kalıntı bırakmaz. Elektronik ve hassas cihazlara zarar vermez. Hızlı buharlaşır, iz bırakmaz. Kapalı alanlarda otomatik sistemlerde kullanılır.</p>
+                            <p><strong>Kullanım Alanları:</strong> Veri merkezleri, Sunucu odaları, Müzeler, arşivler, Elektronik ekipman odaları, Telekomünikasyon odaları.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varHalo2">Halokarbon (2 kg)</button>
+                                <button class="var-tab" data-target="varHalo6">Halokarbon (6 kg)</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varHalo2">
+                                    <span class="var-tag">[2 kg Cihaz]</span> Bilgi işlem odaları, telekomünikasyon odaları ve arşivlerde küçük çaplı gazlı söndürme için el tipi cihaz.
+                                </div>
+                                <div class="var-desc" id="varHalo6">
+                                    <span class="var-tag">[6 kg Cihaz]</span> Müze vitrinleri, tarihi arşiv odaları ve büyük sunucu kabin sistemleri için temiz gazlı yüksek kapasiteli koruma.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_sondurucu_halo.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 8. OTOMATİK SÖNDÜRME SİSTEMLERİ -->
+                <div class="product-card" data-category="yangin-sondurme" id="prodOtomatik">
+                    <div class="product-img-area">
+                        <img src="assets/sondurucu_otomatik.png" alt="Otomatik Söndürme Sistemi" class="product-img">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">8. Otomatik Söndürme Sistemleri</h2>
+                            <span class="product-badge">Yangın Söndürme</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Yangını otomatik algılar ve söndürür. İnsan müdahalesi gerekmeden çalışır. Büyük alanlarda etkilidir. Farklı gaz ve su bazlı sistemleri vardır.</p>
+                            <p><strong>Kullanım Alanları:</strong> Alışveriş merkezleri, Depolar, Fabrikalar, Otoparklar, Tüneller ve metro istasyonları.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varOtoDavlumbaz">Davlumbaz Söndürme</button>
+                                <button class="var-tab" data-target="varOtoGazli">FM-200 Gazlı Söndürme</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varOtoDavlumbaz">
+                                    <span class="var-tag">[Davlumbaz Tipi]</span> Restoran ocak davlumbazlarında sıcaklığı algılayıp otomatik devreye giren ıslak kimyasal püskürtme ünitesi.
+                                </div>
+                                <div class="var-desc" id="varOtoGazli">
+                                    <span class="var-tag">[Gazlı Tipi]</span> Fabrika arşivleri ve pano odaları için komple dedektörlü, silindir bataryalı otomatik FM-200 gazlı söndürme sistemleri.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_sondurucu_otomatik.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+                <!-- 9. TAŞINABİLİR YANGIN SÖNDÜRME TOPU -->
+                <div class="product-card" data-category="yangin-sondurme" id="prodTop">
+                    <div class="product-img-area">
+                        <img src="assets/sondurucu_top.png" alt="Yangın Söndürme Topu" class="product-img" style="transform: scale(0.95);">
+                    </div>
+                    <div class="product-content-area">
+                        <div class="product-meta-header">
+                            <h2 class="product-name">9. Taşınabilir Yangın Söndürme Topu</h2>
+                            <span class="product-badge">Yangın Söndürme</span>
+                        </div>
+                        <div class="product-desc">
+                            <p style="margin-bottom: 0.5rem;"><strong>Özellikleri:</strong> Yangınla temas ettiğinde otomatik patlar. Toz yayarak yangını boğar ve söndürür. Kolay kullanım, bakım gerektirmez. Küçük yangınlarda etkilidir.</p>
+                            <p><strong>Kullanım Alanları:</strong> Evler, Araçlar, Tekneler, Mutfaklar, Küçük ofisler.</p>
+                        </div>
+                        
+                        <div class="variation-box">
+                            <div class="variation-tabs-wrapper">
+                                <button class="var-tab active" data-target="varTop13">Söndürme Topu (1.3 kg)</button>
+                            </div>
+                            <div class="variation-body">
+                                <div class="var-desc active" id="varTop13">
+                                    <span class="var-tag">[1.3 kg Top]</span> Alevlerin içine atıldığında veya sabit monte edildiği yerde ısıya temas ettiğinde 3-5 saniyede otomatik patlayan pratik top.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-use-img-area">
+                        <img src="assets/use_sondurucu_top.png" alt="Kullanım Alanı" class="product-use-img">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sonuç Bulunamadı Bildirimi -->
+            <div class="no-results" id="noResults">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 1rem; color: var(--text-gray);">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+                <h3>Aradığınız kriterlere uygun ürün bulunamadı.</h3>
+                <p>Lütfen arama kelimenizi kontrol edin veya farklı bir kategori seçin.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>GLPGAZ<span>YANGIN</span></h3>
+                <p>Evsel, ticari ve endüstriyel gaz ihtiyaçlarınızda yüksek güvenlik ve üstün hizmet kalitesi ile her an hizmetinizdeyiz.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Hızlı Linkler</h4>
+                <ul class="footer-links-list">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="urunlerimiz.html">Ürünlerimiz</a></li>
+                    <li><a href="iletisim.html">İletişim & Harita</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>İletişim Bilgileri</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        +90 (555) 123 45 67
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        info@glpgazyangin.com
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Merkez Mah. İstiklal Cad. No:123/A Kaan Plaza, İstanbul
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 glpgazyangın. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- Yukarı Çık Butonu -->
+    <div class="scroll-to-top" id="scrollTopBtn" title="Yukarı Çık">
+        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
